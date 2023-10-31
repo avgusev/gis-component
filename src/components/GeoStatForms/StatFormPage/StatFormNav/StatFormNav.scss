@@ -1,0 +1,29 @@
+.StatFormNav_pills {
+padding: 12px 16px;
+border-radius: 4px;
+text-decoration: none;
+background: transparent;
+white-space: nowrap;
+color: #0d47a1;
+cursor: pointer;
+
+    &--active {
+        background: #E2EAF6;
+        text-decoration: none;
+    }
+
+    &:focus {
+        background: #E2EAF6;
+        text-decoration: none;
+    }
+
+    &:hover {
+        text-decoration: none;
+    }
+
+}
+
+.StatFormNav_nav {
+    flex-wrap: nowrap;
+    overflow: auto;
+}

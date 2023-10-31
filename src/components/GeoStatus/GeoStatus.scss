@@ -1,0 +1,26 @@
+.GeoStatus_circle {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+
+    &_red {
+        background: #F44336;
+    }
+
+    &_grey {
+        background: #999EA5;
+    }
+
+
+    &_green {
+        background: #4CAF50;
+    }
+
+    &_yellow {
+        background: #FBC02D;
+    }
+}
+
+.GeoStatus_text {
+    color: #000C1E !important;
+}

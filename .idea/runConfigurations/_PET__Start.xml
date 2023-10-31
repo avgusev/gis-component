@@ -1,0 +1,19 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="[PET] Start" type="js.build_tools.npm">
+    <package-json value="$PROJECT_DIR$/../skdf-gis-pet-project/package.json" />
+    <command value="start" />
+    <node-interpreter value="project" />
+    <package-manager value="yarn" />
+    <envs />
+    <method v="2">
+      <option name="NpmBeforeRunTask" enabled="true">
+        <package-json value="$PROJECT_DIR$/../skdf-gis-pet-project/package.json" />
+        <command value="link" />
+        <arguments value="skdf-gis-component" />
+        <node-interpreter value="project" />
+        <package-manager value="yarn" />
+        <envs />
+      </option>
+    </method>
+  </configuration>
+</component>

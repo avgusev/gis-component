@@ -1,0 +1,246 @@
+[
+  {
+    "layerGroup": "skeleton",
+    "group": "Основные",
+    "title": "Опорная сеть",
+    "source": "get_geo_box",
+    "zoomLayers": [
+      {
+        "zoomLayerGroup": "skeleton_zoom_1",
+        "minZoom": 0,
+        "maxZoom": 7,
+        "subLayers": [
+          {
+            "subLayerName": "skeleton_zoom_1_black",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road_gid",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [9, 7, 5]
+              },
+              "color_style": {
+                "color_column": "skeleton",
+                "color_column_values": [1],
+                "colors": ["000000"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "zoomLayerGroup": "skeleton_zoom_2",
+        "minZoom": 7,
+        "maxZoom": 10,
+        "subLayers": [
+          {
+            "subLayerName": "skeleton_zoom_2_black",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road_gid",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [9, 7, 5]
+              },
+              "color_style": {
+                "color_column": "skeleton",
+                "color_column_values": [1],
+                "colors": ["000000"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "zoomLayerGroup": "skeleton_zoom_3",
+        "minZoom": 10,
+        "maxZoom": 12,
+        "subLayers": [
+          {
+            "subLayerName": "skeleton_zoom_3_black",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road_gid",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [7, 5, 3]
+              },
+              "color_style": {
+                "color_column": "skeleton",
+                "color_column_values": [1],
+                "colors": ["000000"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "zoomLayerGroup": "skeleton_zoom_4",
+        "minZoom": 12,
+        "maxZoom": 19,
+        "subLayers": [
+          {
+            "subLayerName": "skeleton_zoom_4_black",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road_gid",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [6, 4, 2]
+              },
+              "color_style": {
+                "color_column": "skeleton",
+                "color_column_values": [1],
+                "colors": ["000000"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "layer": "road_by_value",
+    "group": "Основные",
+    "title": "Дорога",
+    "source": "get_geo_box",
+    "zoomLayers": [
+      {
+        "zoomLayerGroup": "road_by_value_zoom_1",
+        "minZoom": 0,
+        "maxZoom": 7,
+        "subLayers": [
+          {
+            "subLayerName": "road_by_value_zoom_1_rgb",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [7, 5, 3]
+              },
+              "color_style": {
+                "color_column": "value_of_the_road",
+                "color_column_values": [83717, 83718, 83719],
+                "colors": ["ff0000", "008000", "0000ff"]
+              }
+            }
+          },
+          {
+            "subLayerName": "road_by_value_zoom_1_white",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [5, 3, 1]
+              },
+              "color_style": {
+                "colors": ["ffffff"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "zoomLayerGroup": "road_by_value_zoom_2",
+        "minZoom": 7,
+        "maxZoom": 10,
+        "subLayers": [
+          {
+            "subLayerName": "road_by_value_zoom_2_rgb",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [7, 5, 3]
+              },
+              "color_style": {
+                "color_column": "value_of_the_road",
+                "color_column_values": [83717, 83718, 83719],
+                "colors": ["ff0000", "008000", "0000ff"]
+              }
+            }
+          },
+          {
+            "subLayerName": "road_by_value_zoom_2_white",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [5, 3, 1]
+              },
+              "color_style": {
+                "colors": ["ffffff"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "zoomLayerGroup": "road_by_value_zoom_3",
+        "minZoom": 10,
+        "maxZoom": 12,
+        "subLayers": [
+          {
+            "subLayerName": "road_by_value_zoom_3_rgb",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [7, 5, 3]
+              },
+              "color_style": {
+                "color_column": "value_of_the_road",
+                "color_column_values": [83717, 83718, 83719],
+                "colors": ["ff0000", "008000", "0000ff"]
+              }
+            }
+          },
+          {
+            "subLayerName": "road_by_value_zoom_3_white",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [5, 3, 1]
+              },
+              "color_style": {
+                "colors": ["ffffff"]
+              }
+            }
+          }
+        ]
+      },
+      {
+        "zoomLayerGroup": "road_by_value_zoom_3",
+        "minZoom": 12,
+        "maxZoom": 19,
+        "subLayers": [
+          {
+            "subLayerName": "road_by_value_zoom_3_rgb",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [7, 5, 3]
+              },
+              "color_style": {
+                "color_column": "value_of_the_road",
+                "color_column_values": [83717, 83718, 83719],
+                "colors": ["ff0000", "008000", "0000ff"]
+              }
+            }
+          },
+          {
+            "subLayerName": "road_by_value_zoom_3_white",
+            "style": {
+              "width_style": {
+                "width_column": "value_of_the_road",
+                "width_column_values": [83717, 83718, 83719],
+                "widths": [5, 3, 1]
+              },
+              "color_style": {
+                "colors": ["ffffff"]
+              }
+            }
+          }
+        ]
+      }
+    ]
+  }
+]

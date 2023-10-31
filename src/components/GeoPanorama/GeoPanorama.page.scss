@@ -1,0 +1,28 @@
+.GeoPanoramaPage__container {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction:column;
+  width: 100%;
+  height: auto;
+  background-color: lightgrey;
+  margin: 0;
+  padding: 0;
+}
+
+.GeoPanoramaPage__canvas-item-1 {
+  background-color: cornflowerblue;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 60vh;
+}
+
+.GeoPanoramaPage__canvas-item-2 {
+  background-color: cornsilk;
+  position: relative;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  height: 40vh;
+}

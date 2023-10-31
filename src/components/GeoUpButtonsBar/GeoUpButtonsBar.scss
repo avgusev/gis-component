@@ -1,0 +1,16 @@
+.GeoUpButtonsBar__container {
+    display: flex;
+    justify-content: flex-end;
+
+    position: absolute;
+    top:24px;
+    right:24px;
+    z-index: 900;
+
+    // margin-top: 24px;
+    // margin-right: 24px;
+}
+
+.GeoUpButtonsBar__item {
+    margin-left: 8px;
+}

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/skdf-gis-component.iml" filepath="$PROJECT_DIR$/.idea/skdf-gis-component.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../skdf-gis-pet-project/skdf-gis-pet-project.iml" filepath="$PROJECT_DIR$/../skdf-gis-pet-project/skdf-gis-pet-project.iml" />
+    </modules>
+  </component>
+</project>

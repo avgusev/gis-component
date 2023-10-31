@@ -1,0 +1,35 @@
+@import '../../../variables.scss';
+
+.GeoDiagInterfaceFooter__footer {
+    position: sticky;
+    bottom: 0;
+    left: 0;
+    z-index: 10;
+    width: 100%;
+    height: $geo-diag-interface-footer-height;
+    display: flex;
+}
+
+.GeoDiagInterfaceFooter__footer__first-item {
+    width: 70%;
+    background-color: #FAEBD7;
+}
+
+.GeoDiagInterfaceFooter__footer__second-item {
+    width: 30%;
+    background-color: #F0FFFF;
+}
+
+.GeoDiagInterfaceFooter__close__btn {
+    position: absolute;
+
+    bottom: $geo-diag-interface-footer-height;
+    // left: 460px;
+    right: 20px;
+    z-index: 15;
+    border-radius: 12px 12px 0px 0px;
+}
+
+.GeoDiagInterfaceFooter__close__btn--close {
+    bottom: 0;
+}

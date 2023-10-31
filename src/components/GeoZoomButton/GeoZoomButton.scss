@@ -1,0 +1,35 @@
+.zoomBtn__container {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.zoomBtn__plus {
+    border-radius: 12px 12px 0px 0px;
+    border: none;
+
+    &:hover{
+        border: none;
+        box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+    }
+
+    &:focus{
+        border: none;
+        box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+    }
+}
+
+.zoomBtn__minus {
+    border-radius: 0px 0px 12px 12px;
+    border: none;
+    
+    &:hover{
+        border: none;
+        box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+    }
+
+    &:focus{
+        border: none;
+        box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+    }
+}

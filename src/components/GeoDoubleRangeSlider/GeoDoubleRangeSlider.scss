@@ -1,0 +1,393 @@
+@import '../../variables.scss';
+
+.thumb {
+  pointer-events: none;
+  position: absolute;
+  height: 0;
+  width: 100%;
+  outline: none;
+
+  &,
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  &::-webkit-slider-thumb {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+    background-color: #0d47a1;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.0510643), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 3px 3px rgba(0, 0, 0, 0.05);
+    &:hover {
+      border: 2px solid #ffffff;
+    }
+  }
+
+  &::-moz-range-thumb {
+    cursor: pointer;
+    height: 24px;
+    width: 24px;
+    margin-top: 4px;
+    pointer-events: all;
+    position: relative;
+    background-color: #0d47a1;
+    border: 2px solid #ffffff;
+    border-radius: 50%;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.0510643), 0px 2px 2px rgba(0, 0, 0, 0.1), 0px 3px 3px rgba(0, 0, 0, 0.05);
+    &:hover {
+      border: 2px solid #ffffff;
+    }
+  }
+
+  &__left {
+    z-index: 10;
+  }
+
+  &__right {
+    z-index: 10;
+  }
+}
+
+.double-range-slider--width300 {
+  width: 300px;
+}
+.double-range-slider--halfwidth {
+  width: 50%;
+}
+.double-range-slider--fullwidth {
+  width: 100%;
+}
+
+.double-range-slider {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+
+  .slider {
+    position: relative;
+    width: 100%;
+    &__track,
+    &__range {
+      position: absolute;
+      border-radius: 19px;
+      height: 8px;
+    }
+
+    &__track {
+      background-color: #e5e7e8;
+      display: flex;
+      z-index: 1;
+      width: 100%;
+    }
+
+    &__range {
+      background-color: #0d47a1;
+      z-index: 2;
+    }
+  }
+
+  .slider__lyr_road_conditions_lanes {
+    width: 100%;
+
+    &__1,
+    &__0,
+    &__2,
+    &__3,
+    &__4 {
+      height: 8px;
+    }
+
+    &__0 {
+      background-color: $geo-range-conditions-lanes-color-0;
+      border-radius: 19px 0px 0px 19px;
+      width: $geo-range-conditions-lanes-width-0;
+    }
+
+    &__1 {
+      background-color: $geo-range-conditions-lanes-color-1;
+      border-radius: 0px;
+      width: $geo-range-conditions-lanes-width-1;
+    }
+
+    &__2 {
+      background-color: $geo-range-conditions-lanes-color-2;
+      border-radius: 0px;
+      width: $geo-range-conditions-lanes-width-2;
+    }
+
+    &__3 {
+      background-color: $geo-range-conditions-lanes-color-3;
+      border-radius: 0px;
+      width: $geo-range-conditions-lanes-width-3;
+    }
+
+    &__4 {
+      background-color: $geo-range-conditions-lanes-color-4;
+      border-radius: 0px 19px 19px 0px;
+      width: $geo-range-conditions-lanes-width-4;
+    }
+
+    &::-webkit-slider-thumb {
+      background-color: $geo-range-conditions-lanes-color-0;
+    }
+
+    &::-moz-range-thumb {
+      background-color: $geo-range-conditions-lanes-color-0;
+    }
+  }
+
+  .slider__lyr_road_conditions_top_speed {
+    width: 100%;
+
+    &__1,
+    &__0,
+    &__2,
+    &__3,
+    &__4,
+    &__5 {
+      height: 8px;
+    }
+
+    &__0 {
+      background-color: $geo-range-conditions-top-speed-color-0;
+      border-radius: 19px 0px 0px 19px;
+      width: $geo-range-conditions-top-speed-width-0;
+    }
+
+    &__1 {
+      background-color: $geo-range-conditions-top-speed-color-1;
+      border-radius: 0px;
+      width: $geo-range-conditions-top-speed-width-1;
+    }
+
+    &__2 {
+      background-color: $geo-range-conditions-top-speed-color-2;
+      border-radius: 0px;
+      width: $geo-range-conditions-top-speed-width-2;
+    }
+
+    &__3 {
+      background-color: $geo-range-conditions-top-speed-color-3;
+      border-radius: 0px;
+      width: $geo-range-conditions-top-speed-width-3;
+    }
+
+    &__4 {
+      background-color: $geo-range-conditions-top-speed-color-4;
+      border-radius: 0px;
+      width: $geo-range-conditions-top-speed-width-4;
+    }
+
+    &__5 {
+      background-color: $geo-range-conditions-top-speed-color-5;
+      border-radius: 0px 19px 19px 0px;
+      width: $geo-range-conditions-top-speed-width-5;
+    }
+
+    &::-webkit-slider-thumb {
+      background-color: $geo-range-conditions-top-speed-color-0;
+    }
+
+    &::-moz-range-thumb {
+      background-color: $geo-range-conditions-top-speed-color-0;
+    }
+  }
+
+  .slider__lyr_road_conditions_capacity {
+    width: 100%;
+
+    &__1,
+    &__0,
+    &__2,
+    &__3,
+    &__4 {
+      height: 8px;
+    }
+
+    &__0 {
+      background-color: $geo-range-conditions-capacity-color-0;
+      border-radius: 19px 0px 0px 19px;
+      width: $geo-range-conditions-capacity-width-0;
+    }
+
+    &__1 {
+      background-color: $geo-range-conditions-capacity-color-1;
+      border-radius: 0px;
+      width: $geo-range-conditions-capacity-width-1;
+    }
+
+    &__2 {
+      background-color: $geo-range-conditions-capacity-color-2;
+      border-radius: 0px;
+      width: $geo-range-conditions-capacity-width-2;
+    }
+
+    &__3 {
+      background-color: $geo-range-conditions-capacity-color-3;
+      border-radius: 0px;
+      width: $geo-range-conditions-capacity-width-3;
+    }
+
+    &__4 {
+      background-color: $geo-range-conditions-capacity-color-4;
+      border-radius: 0px 19px 19px 0px;
+      width: $geo-range-conditions-capacity-width-4;
+    }
+
+    &::-webkit-slider-thumb {
+      background-color: $geo-range-conditions-capacity-color-0;
+    }
+
+    &::-moz-range-thumb {
+      background-color: $geo-range-conditions-capacity-color-0;
+    }
+  }
+
+  .slider__lyr_road_conditions_traffic {
+    width: 100%;
+
+    &__1,
+    &__0,
+    &__2,
+    &__3,
+    &__4 {
+      height: 8px;
+    }
+
+    &__0 {
+      background-color: $geo-range-conditions-traffic-color-0;
+      border-radius: 19px 0px 0px 19px;
+      width: $geo-range-conditions-traffic-width-0;
+    }
+
+    &__1 {
+      background-color: $geo-range-conditions-traffic-color-1;
+      border-radius: 0px;
+      width: $geo-range-conditions-traffic-width-1;
+    }
+
+    &__2 {
+      background-color: $geo-range-conditions-traffic-color-2;
+      border-radius: 0px;
+      width: $geo-range-conditions-traffic-width-2;
+    }
+
+    &__3 {
+      background-color: $geo-range-conditions-traffic-color-3;
+      border-radius: 0px;
+      width: $geo-range-conditions-traffic-width-3;
+    }
+
+    &__4 {
+      background-color: $geo-range-conditions-traffic-color-4;
+      border-radius: 0px 19px 19px 0px;
+      width: $geo-range-conditions-traffic-width-4;
+    }
+
+    &::-webkit-slider-thumb {
+      background-color: $geo-range-conditions-traffic-color-0;
+    }
+
+    &::-moz-range-thumb {
+      background-color: $geo-range-conditions-traffic-color-0;
+    }
+  }
+
+  .slider__lyr_roadway_width {
+    width: 100%;
+
+    &__1,
+    &__0,
+    &__2,
+    &__3 {
+      height: 8px;
+    }
+
+    &__0 {
+      background-color: $geo-range-roadway-width-color-0;
+      border-radius: 19px 0px 0px 19px;
+      width: $geo-range-roadway-width-width-0;
+    }
+
+    &__1 {
+      background-color: $geo-range-roadway-width-color-1;
+      border-radius: 0px;
+      width: $geo-range-roadway-width-width-1;
+    }
+
+    &__2 {
+      background-color: $geo-range-roadway-width-color-2;
+      border-radius: 0px;
+      width: $geo-range-roadway-width-width-2;
+    }
+
+    &__3 {
+      background-color: $geo-range-roadway-width-color-3;
+      border-radius: 0px 19px 19px 0px;
+      width: $geo-range-roadway-width-width-3;
+    }
+
+    &::-webkit-slider-thumb {
+      background-color: $geo-range-roadway-width-color-0;
+    }
+
+    &::-moz-range-thumb {
+      background-color: $geo-range-roadway-width-color-0;
+    }
+  }
+
+  .slider__lyr_roadbed_width {
+    width: 100%;
+
+    &__1,
+    &__0,
+    &__2,
+    &__3 {
+      height: 8px;
+    }
+
+    &__0 {
+      background-color: $geo-range-roadbed-width-color-0;
+      border-radius: 19px 0px 0px 19px;
+      width: $geo-range-roadbed-width-width-0;
+    }
+
+    &__1 {
+      background-color: $geo-range-roadbed-width-color-1;
+      border-radius: 0px;
+      width: $geo-range-roadbed-width-width-1;
+    }
+
+    &__2 {
+      background-color: $geo-range-roadbed-width-color-2;
+      border-radius: 0px;
+      width: $geo-range-roadbed-width-width-2;
+    }
+
+    &__3 {
+      background-color: $geo-range-roadbed-width-color-3;
+      border-radius: 0px 19px 19px 0px;
+      width: $geo-range-roadbed-width-width-3;
+    }
+
+    &::-webkit-slider-thumb {
+      background-color: $geo-range-roadbed-width-color-0;
+    }
+
+    &::-moz-range-thumb {
+      background-color: $geo-range-roadbed-width-color-0;
+    }
+  }
+}
+
+.double-range-slider__range {
+  margin-bottom: 20px;
+}

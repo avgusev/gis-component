@@ -1,0 +1,22 @@
+.GeoFilePrewier__container {
+    display: flex;
+    justify-content: flex-start;
+    color: #0d47a1 !important;
+
+    margin-bottom: 16px;
+
+    .GeoFilePrewier__img {
+        width: 24px;
+        height: 20px;
+
+        margin-right: 9px;
+    }
+
+    .GeoFilePrewier__text {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+
+        margin-right: 15px;
+    }
+}

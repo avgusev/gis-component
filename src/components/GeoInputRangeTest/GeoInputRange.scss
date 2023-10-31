@@ -1,0 +1,31 @@
+.GeoInputRange__show-btn-tooltip__btn {
+    outline: none;
+    border: none;
+    background-color: transparent;
+    color: #0d47a1;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    cursor: pointer;
+  }
+  
+  .GeoInputRange {
+    display: inline-flex
+  }
+  
+  .GeoInputRange--width300 {
+    width: 300px;
+  }
+  
+  .GeoInputRange--halfwidth {
+    width: 50%;
+  }
+  
+  .GeoInputRange--fullwidth {
+    width: 100%;
+  }
+  
+  .GeoInputRangeTest__container {
+    display: flex;
+    flex-direction: column;
+  }

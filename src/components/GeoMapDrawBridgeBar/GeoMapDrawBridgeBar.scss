@@ -1,0 +1,46 @@
+.GeoMapDrawBridgeBar {
+    background-color: #fff;
+    color: #0D47A1 !important;
+    padding: 0.75rem 0.75rem;
+    height: 50px;
+    border-radius: 0.75rem;
+    box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+    display: flex;
+    position: relative;
+        // &:hover{
+        //     background-color: #f6f8fb;
+        //     border: 1px solid #f6f8fb;
+        //     color: #0D47A1;
+        //     box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+        // }
+
+        // &:focus{
+        //     background-color: #f6f8fb;
+        //     border: 1px solid #f6f8fb;
+        //     color: #0D47A1;
+        //     box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+        // }
+}
+
+  
+  .GeoMapDrawBridgeBar > div {
+    margin: 5px;
+  }
+
+
+  .GeoMapDrawBridgeBar__draw_blinking {
+    animation: blink-animation 1s steps(10, start) infinite;
+    -webkit-animation: blink-animation 1s steps(10, start) infinite;
+    // animation: blink-animation 1s steps(5, start) infinite;
+    // -webkit-animation: blink-animation 1s steps(5, start) infinite;
+  }
+  
+  @keyframes blink-animation {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }
+  
+  @-webkit-keyframes blink-animation {
+    from { opacity: 1.0; }
+    to { opacity: 0.0; }
+  }

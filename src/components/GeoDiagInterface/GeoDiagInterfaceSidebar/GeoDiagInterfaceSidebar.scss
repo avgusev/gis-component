@@ -1,0 +1,42 @@
+@import '../../../variables.scss';
+
+.GeoDiagInterfaceSidebar__card {
+  // width: 100% !important;
+  width: $geo-diag-interface-sidebar-width;
+  position: fixed;
+  z-index: 10;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 0;
+  border: 0;
+  overflow: hidden;
+
+  padding-top: 10px;
+}
+
+.GeoDiagInterfaceSidebar__cardbody {
+  height: calc(100vh - 200px);
+  overflow-y: auto;
+}
+
+.GeoDiagInterfaceSidebar__close__btn {
+  position: absolute;
+  bottom: 25px;
+  left: $geo-diag-interface-sidebar-width;
+  z-index: 9;
+  border-radius: 0px 12px 12px 0px;
+}
+
+.GeoDiagInterfaceSidebar__close__btn--close {
+  left: 0;
+}
+
+.GeoDiagInterfaceSidebar__title {
+  padding-left: 20px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 5px;
+  background-color: #fff;
+}

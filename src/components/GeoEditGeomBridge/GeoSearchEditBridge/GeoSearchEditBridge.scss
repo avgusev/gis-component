@@ -1,0 +1,36 @@
+.GeoSearchEditBridge__search_result {
+  height: 300px;
+  background-color: white;
+  border-radius: 0.75rem 0.75rem 0.75rem 0.75rem;
+  border: 1px solid rgb(230, 230, 230);
+  margin: 10px 0px 0px;
+  overflow: auto;
+  padding:10px;
+}
+
+.GeoSearchEditBridge__content {
+  font-size:14px;
+  padding: 5px;
+  color:#0D47A1;
+  cursor: pointer;
+  text-align: justify;
+}
+
+.GeoSearchEditBridge__content:hover {
+  background-color: rgb(248, 248, 248)
+}
+
+.GeoSearchEditBridge__nocontent {
+  font-size:14px;
+  padding: 5px;
+  color:#979797;
+  text-align: justify;
+}
+
+.GeoSearchEditBridge__searching {
+  padding:5px;
+  font-size:14px;
+  padding: 5px;
+  color:#0D47A1;
+  text-align: justify;
+}

@@ -1,0 +1,193 @@
+
+.GrafCard__loader {
+    height: calc(100vh - 200px);
+    overflow-y: hidden;
+  }
+  
+  .GrafCard__close__btn {
+    // position: fixed;
+    position: absolute;
+    top: 24px;
+    // left: 460px;
+    left: 400px;
+    z-index: 15;
+    border-radius: 0px 12px 12px 0px;
+  }
+  
+  .GrafCard__card {
+    width: 400px !important;
+    position: fixed;
+    z-index: 19;
+    height: 100vh;
+    background-color: white;
+    padding: 0;
+  
+    border-radius: 0;
+    border: 0;
+  
+    overflow: hidden;
+  }
+  
+  .GrafCard__header {
+    background-color: #fff;
+    border: none;
+    border-radius: 0;
+    padding: 24px;
+  }
+  
+  .GrafCard__content {
+    max-height: calc(100vh - 250px);
+    height: calc(100vh - 250px);
+    overflow-y: auto;
+    padding: 0 12px 0 24px;
+  }
+  
+  .GrafCard__content_edge {
+    max-height: calc(100vh - 100px);
+    height: calc(100vh - 100px);
+    overflow-y: auto;
+    padding: 0 12px 0 24px;
+  }
+  
+  .GrafCard__content__edit {
+    max-height: 100vh;
+    height: 100vh;
+    overflow-y: auto;
+    padding: 0 12px 20px 24px;
+  }
+  
+  .GrafCard__title {
+    font-weight: 900;
+    letter-spacing: 0;
+  
+  }
+  
+  .GrafCard__subtitle {
+    font-weight: normal;
+    font-size: 12px;
+  }
+  
+  .GrafCard__item {
+    margin-bottom: 26px;
+  }
+  
+  .GrafCard__group__title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .GrafCard__item__title {
+    font-weight: normal;
+    font-size: 12px;
+    margin-bottom: 4px;
+  }
+  
+  .GrafCard__item__text {
+    font-weight: normal;
+    font-size: 16px;
+  }
+  
+  .GrafCard__logo__img {
+    min-width: 48px;
+    height: 48px;
+    border-radius: 0.75rem;
+    background-color: orange;
+  }
+  
+  .GrafCard__logo__text {
+    font-weight: normal;
+  }
+  
+  .GrafCard__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: #fff;
+    border: none;
+    padding: 18px 24px 23px 24px;
+    border-radius: 0;
+  
+    box-shadow: 1px 0px 2px rgba(108, 133, 159, 0.14), 2px 0px 4px rgba(108, 133, 159, 0.14);
+  }
+  
+  .GrafCard__btn__link__content {
+    color: #fff;
+    &:hover {
+      color: #fff;
+      text-decoration: none;
+    }
+  }
+  
+  .GrafCard__icon__item {
+    color: #0d47a1 !important;
+    cursor: pointer !important;
+  }
+  
+  .GrafCard__btn__show-all {
+    background-color: transparent; 
+    font-size: 16px;
+    border: none;
+    color: #0d47a1 !important;
+    outline: none;
+    cursor: pointer;
+  }
+  
+  .GrafCard__icon__bar {
+    display: flex;
+  }
+  
+  .GrafCard__dropdown-menu-item__text {
+   margin-left: 10px;
+   font-size: 16px;
+  line-height: 24px;
+  }
+  
+  .GrafCard__dropdown-menu-item {
+   color: #0d47a1 !important;
+  // &:active {
+  //   color: #fff !important;
+  // }
+  }
+  
+  .GrafCard__linktexticon {
+    color: #0d47a1 !important;
+    text-decoration: none;
+    &:hover {
+      text-decoration: none !important;
+    }
+    &:active {
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+    &:focus {
+      color: #fff !important;
+      text-decoration: none !important;
+    }
+  }
+  
+  .GrafCard__dropdown-menu {
+    width: 320px;
+    color: #0d47a1 !important;
+    padding: 20px 5px !important;
+    position: fixed !important;
+    box-shadow: 0px 4px 8px rgba(108, 133, 159, 0.1), 0px 8px 16px rgba(108, 133, 159, 0.1) !important;
+    // right: 200px !important;
+    // z-index: 300 !important;
+  }
+  
+  .GrafCard__dropdown-toggle__btn {
+    min-width: 24px !important;
+    padding: 0 !important;
+    background-color: transparent !important;
+    border: none !important;
+    color: #0d47a1 !important;
+    &:hover {
+      min-width: 24px !important;
+      padding: 0 !important;
+      background-color: transparent !important;
+      border: none !important;
+      color: #0d47a1 !important;
+    }
+  }

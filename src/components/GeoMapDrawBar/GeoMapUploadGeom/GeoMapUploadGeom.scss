@@ -1,0 +1,65 @@
+.GeoMapUploadGeom__modal {
+    height: 330px;
+    width: 23rem;
+    position: absolute;
+    inset: 70px -115px auto auto;
+    transform: translate(-117px, 0px);
+    border-radius: 0.75rem;
+    transition: 'top' 1s !important;
+    -moz-transition: all 1s ease-in; /* Firefox 4 */
+    -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
+    -o-transition: all 1s ease-in; /* Opera */
+    overflow: hidden;
+
+}
+
+.GeoMapUploadGeom__modal__body {
+    height: 180px;
+    padding: 24px 24px 0px 24px;
+    overflow-y: auto;
+    background-color: #fff;
+    z-index: 999;
+  
+    border-radius: 12px !important;
+}
+
+.GeoMapUploadGeom__modal__footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  
+    background-color: #fff;
+    border: none;
+    border-radius: 0px 0px 12px 12px !important;
+    padding-top: 18px;
+    padding-bottom: 25px;
+  
+    box-shadow: 1px 0px 2px rgba(108, 133, 159, 0.14), 2px 0px 4px rgba(108, 133, 159, 0.14) !important;
+}
+
+
+.GeoMapUploadGeom__modal__body__title {
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 28px;
+
+    margin-bottom: 25px;
+    padding: 0;
+}
+
+.GeoMapUploadGeom__form__section {
+    margin-bottom: 5px;
+    
+    .GeoMapUploadGeom__form__section__title {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 24px;
+        
+        margin-bottom: 5px;
+    }
+    
+    .GeoMapUploadGeom__form__section__item {
+        margin-bottom: 5px;
+    }
+
+}

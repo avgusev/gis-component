@@ -1,0 +1,51 @@
+@import '../../../variables.scss';
+
+.GeoDiagInterface__header {
+  height: $geo-diag-interface-header-height;
+  // width: 100%;
+  width: $geo-diag-interface-main-body-width;
+  position: fixed;
+  z-index: 9;
+  // top: 0;
+  // right: 0;
+  padding: 15px;
+  // background-color: red;
+  box-shadow: 0 2px 4px rgb(108 133 159 / 12%), 0 4px 8px rgb(108 133 159 / 12%);
+  background-color: #fff;
+}
+
+.GeoDiagInterfaceHeader__header--no-sidebar {
+  width: 100%;
+}
+
+.GeoDiagInterfaceHeader__close__btn {
+  position: fixed;
+  top: $geo-diag-interface-header-height;
+  // left: 460px;
+  right: 12px;
+  z-index: 8;
+  border-radius: 0px 0px 12px 12px;
+}
+
+.GeoDiagInterfaceHeader__close__btn--close {
+  top: 0;
+}
+
+.GeoDiagInterface__header__item {
+  display: block;
+}
+
+.GeoDiagInterface__header__title {
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.GeoDiagInterface__header__pass-selector {
+  height: $geo-diag-interface-header-pass-selector-height;
+}
+
+.GeoDiagInterfaceHeader__plus__btn {
+  color: #3467b4
+}

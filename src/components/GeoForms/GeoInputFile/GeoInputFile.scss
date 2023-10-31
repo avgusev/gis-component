@@ -1,0 +1,29 @@
+.GeoInputFile--width_300 {
+    width: 300px;
+  }
+  
+.GeoInputFile--half_width {
+    width: 50%;
+}
+  
+.GeoInputFile--full_width {
+    width: 100%;
+}
+
+.GeoInputFile {
+    position: relative;
+	display: block;
+}
+
+.GeoInputFile input[type=file] {
+	position: absolute;
+	z-index: 4;
+	opacity: 0;
+	display: block;
+	width: 200px;
+	height: 0;
+}
+
+.GeoInputFile__label {
+    margin-bottom: 20px;
+}

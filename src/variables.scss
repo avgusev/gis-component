@@ -1,0 +1,79 @@
+$geo-range-conditions-lanes-color-0: #80d8ff;
+$geo-range-conditions-lanes-color-1: #60c6fa;
+$geo-range-conditions-lanes-color-2: #40b5f5;
+$geo-range-conditions-lanes-color-3: #20a3f0;
+$geo-range-conditions-lanes-color-4: #0191ea;
+
+$geo-range-conditions-lanes-width-0: calc(1 / 9 * 100%);
+$geo-range-conditions-lanes-width-1: calc(2 / 9 * 100%);
+$geo-range-conditions-lanes-width-2: calc(2 / 9 * 100%);
+$geo-range-conditions-lanes-width-3: calc(2 / 9 * 100%);
+$geo-range-conditions-lanes-width-4: calc(2 / 9 * 100%);
+
+$geo-range-conditions-top-speed-color-0: #fea766;
+$geo-range-conditions-top-speed-color-1: #fd8453;
+$geo-range-conditions-top-speed-color-2: #fb613f;
+$geo-range-conditions-top-speed-color-3: #ec4c34;
+$geo-range-conditions-top-speed-color-4: #d04532;
+$geo-range-conditions-top-speed-color-5: #b43f2f;
+
+$geo-range-conditions-top-speed-width-0: calc(15 / 125 * 100%);
+$geo-range-conditions-top-speed-width-1: calc(20 / 125 * 100%);
+$geo-range-conditions-top-speed-width-2: calc(20 / 125 * 100%);
+$geo-range-conditions-top-speed-width-3: calc(30 / 125 * 100%);
+$geo-range-conditions-top-speed-width-4: calc(20 / 125 * 100%);
+$geo-range-conditions-top-speed-width-5: calc(20 / 125 * 100%);
+
+$geo-range-conditions-capacity-color-0: #b2ff59;
+$geo-range-conditions-capacity-color-1: #83eb31;
+$geo-range-conditions-capacity-color-2: #64dd17;
+$geo-range-conditions-capacity-color-3: #66be28;
+$geo-range-conditions-capacity-color-4: #68a038;
+
+$geo-range-conditions-capacity-width-0: calc(20000 / 100000 * 100%);
+$geo-range-conditions-capacity-width-1: calc(20000 / 100000 * 100%);
+$geo-range-conditions-capacity-width-2: calc(20000 / 100000 * 100%);
+$geo-range-conditions-capacity-width-3: calc(20000 / 100000 * 100%);
+$geo-range-conditions-capacity-width-4: calc(20000 / 100000 * 100%);
+
+$geo-range-conditions-traffic-color-0: #eeff41;
+$geo-range-conditions-traffic-color-1: #cef520;
+$geo-range-conditions-traffic-color-2: #aeea01;
+$geo-range-conditions-traffic-color-3: #a6c313;
+$geo-range-conditions-traffic-color-4: #9e9d24;
+
+$geo-range-conditions-traffic-width-0: calc(400 / 100000 * 100%);
+$geo-range-conditions-traffic-width-1: calc(1600 / 100000 * 100%);
+$geo-range-conditions-traffic-width-2: calc(4000 / 100000 * 100%);
+$geo-range-conditions-traffic-width-3: calc(8000 / 100000 * 100%);
+$geo-range-conditions-traffic-width-4: calc(86000 / 100000 * 100%);
+
+$geo-range-roadway-width-color-0: #4bf7cf;
+$geo-range-roadway-width-color-1: #43cead;
+$geo-range-roadway-width-color-2: #229d80;
+$geo-range-roadway-width-color-3: #016b52;
+
+$geo-range-roadway-width-width-0: calc(3.25 / 42.25 * 100%);
+$geo-range-roadway-width-width-1: calc(6 / 42.25 * 100%);
+$geo-range-roadway-width-width-2: calc(12 / 42.25 * 100%);
+$geo-range-roadway-width-width-3: calc(21 / 42.25 * 100%);
+
+$geo-range-roadbed-width-color-0: #7af1ff;
+$geo-range-roadbed-width-color-1: #2fcee4;
+$geo-range-roadbed-width-color-2: #01b1cb;
+$geo-range-roadbed-width-color-3: #019fb3;
+
+$geo-range-roadbed-width-width-0: calc(5.25 / 49.75 * 100%);
+$geo-range-roadbed-width-width-1: calc(8 / 49.75 * 100%);
+$geo-range-roadbed-width-width-2: calc(16 / 49.75 * 100%);
+$geo-range-roadbed-width-width-3: calc(20.5 / 49.75 * 100%);
+
+// Size
+$geo-diag-interface-header-title-height: 40px;
+$geo-diag-interface-header-pass-selector-height: 100px;
+$geo-diag-interface-header-height: calc($geo-diag-interface-header-title-height + $geo-diag-interface-header-pass-selector-height);
+$geo-diag-interface-sheet-height: 220px;
+$geo-diag-interface-sheet-data: 250px;
+$geo-diag-interface-footer-height: 300px;
+$geo-diag-interface-sidebar-width: 365px;
+$geo-diag-interface-main-body-width: calc(100% - $geo-diag-interface-sidebar-width);

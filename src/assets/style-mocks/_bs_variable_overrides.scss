@@ -1,0 +1,308 @@
+@import './skdf-colors';
+$font-weight-normal:          400 !default;
+$color-contrast-dark: $skdf-color-black;
+$primary: $skdf-color-primary-05;
+
+$success: $skdf-color-success;
+$danger: $skdf-color-error;
+$warning: $skdf-color-warning;
+
+$prefix: skdf-;
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  2\.5: $spacer * 0.75,
+  3: $spacer,
+  4: $spacer * 1.5,
+  2r: $spacer * 2,
+  5: $spacer * 3,
+  6r: $spacer * 6,
+);
+
+$body-color: $skdf-color-black;
+
+
+$link-decoration: none;
+$link-hover-color: $primary;
+$link-hover-decoration: underline;
+
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1200px,
+  xxl: 1320px,
+);
+
+$grid-gutter-width: 2rem;
+
+$border-color: $skdf-color-grey-01;
+
+$border-radius-sm: 0.5rem;
+$border-radius: 0.75rem;
+$border-radius-lg: 1rem;
+
+
+$font-family-sans-serif: 'Noto Sans', sans-serif;
+
+
+$font-size-base: 1rem;
+$font-size-sm: $font-size-base * 0.875;
+
+
+$font-weight-semibold: 600;
+$font-weight-medium: 500;
+
+
+$h1-font-size: $font-size-base * 2;
+$h2-font-size: $font-size-base * 1.5;
+$h3-font-size: $font-size-base * 1.25;
+$h4-font-size: $font-size-base * 1.125;
+$h5-font-size: $font-size-base;
+
+$headings-font-weight: 600;
+$headings-line-height: 1.25;
+
+
+$text-muted: $skdf-color-grey-04;
+
+$hr-margin-y: 0.75rem;
+$hr-border-color: $skdf-color-grey-01;
+$hr-opacity: 1;
+
+
+$mark-padding: 0 !default;
+$mark-bg: transparent !default;
+
+
+$table-cell-padding-y: 0.6875rem;
+$table-th-font-weight: $font-weight-medium;
+$table-hover-bg-factor: 0.05;
+$table-hover-bg: rgba($skdf-color-black, $table-hover-bg-factor);
+$table-border-color: $skdf-color-grey-01;
+$table-group-separator-color: $primary;
+
+
+$input-btn-padding-y: 0.6875rem; 
+$input-btn-padding-x: 0.9375rem; 
+$input-btn-line-height: 1.5; 
+
+$input-btn-focus-width: 0;
+
+
+$input-btn-padding-y-sm: 0.4375rem; 
+$input-btn-padding-x-sm: 0.75rem;
+$input-btn-font-size-sm: 1rem;
+
+
+$input-btn-padding-y-lg: 1rem;
+$input-btn-padding-x-lg: 1.25rem;
+
+$btn-font-weight: $font-weight-medium;
+
+$form-label-margin-bottom: 0.25rem;
+$form-label-font-size: $font-size-sm;
+$form-label-color: $skdf-color-grey-07;
+
+
+$input-disabled-color: $skdf-color-grey-07;
+$input-disabled-bg: $skdf-color-grey-003;
+$input-disabled-border-color: $skdf-color-grey-003;
+
+$input-border-color: $skdf-color-grey-04;
+
+$input-border-radius: $border-radius-sm;
+
+
+$input-focus-bg: $skdf-color-primary-004;
+$input-focus-border-color: $skdf-color-primary-05;
+
+
+$input-placeholder-color: $skdf-color-grey-05;
+
+
+$form-check-input-width: 1.125em;
+$form-check-padding-start: $form-check-input-width + 0.6875em;
+
+$form-check-input-border: 2px solid $skdf-color-grey-05;
+
+$form-check-input-checked-color: $skdf-color-white;
+$form-check-input-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none'><path fill='#{$form-check-input-checked-color}' d='M11.7306 3.26929C11.9007 3.4401 11.9974 3.67115 11.9999 3.91283C12.0025 4.15451 11.9106 4.38755 11.7441 4.5619L6.85471 10.7049C6.77068 10.7959 6.66926 10.8689 6.55652 10.9196C6.44377 10.9702 6.32202 10.9975 6.19853 10.9998C6.07505 11.0021 5.95237 10.9794 5.83784 10.9329C5.72331 10.8865 5.61927 10.8173 5.53194 10.7295L2.29237 7.47214C2.20212 7.38761 2.12973 7.28568 2.07952 7.17242C2.02932 7.05916 2.00232 6.9369 2.00014 6.81293C1.99797 6.68896 2.02066 6.56582 2.06686 6.45085C2.11306 6.33588 2.18182 6.23145 2.26905 6.14377C2.35628 6.0561 2.46018 5.98698 2.57456 5.94054C2.68894 5.89411 2.81146 5.8713 2.9348 5.87349C3.05814 5.87568 3.17978 5.90281 3.29246 5.95327C3.40514 6.00374 3.50655 6.0765 3.59065 6.16721L6.15536 8.74382L10.4091 3.29637C10.4929 3.20523 10.5942 3.13203 10.7069 3.08114C10.8195 3.03025 10.9412 3.00272 11.0647 3.00019C11.1882 2.99766 11.3109 3.02019 11.4255 3.06643C11.5402 3.11266 11.6443 3.18166 11.7318 3.26929H11.7306Z'/></svg>");
+$form-check-radio-checked-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' ><circle cx='7' cy='7' r='5.5' stroke='#{$form-check-input-checked-color}' stroke-width='3'/></svg>");
+
+$form-check-input-disabled-opacity: 1;
+
+
+$form-switch-width: 2.5em;
+$form-switch-padding-start: $form-switch-width + 0.5em;
+$form-switch-color: $skdf-color-white;
+$form-switch-bg-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='-4 -4 8 8'><circle r='4' fill='#{$form-switch-color}'/></svg>");
+
+
+$form-switch-focus-bg-image: $form-switch-bg-image;
+
+$form-switch-checked-bg-image: $form-switch-bg-image;
+
+$form-feedback-invalid-color: $danger !default;
+
+$form-feedback-icon-invalid-color: $form-feedback-invalid-color !default;
+
+$form-feedback-icon-valid: none;
+$form-feedback-icon-invalid: url("data:image/svg+xml,<svg width='20' height='20' viewBox='0 0 20 20'  xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M10 2C5.58172 2 2 5.58172 2 10C2 14.4183 5.58172 18 10 18C14.4183 18 18 14.4183 18 10C18 5.58172 14.4183 2 10 2ZM0 10C0 4.47715 4.47715 0 10 0C15.5228 0 20 4.47715 20 10C20 15.5228 15.5228 20 10 20C4.47715 20 0 15.5228 0 10ZM10 5C9.31034 5 8.75 5.56757 8.75 6.26611V6.6736L9.03736 11.0686C9.07328 11.6071 9.46839 12 10 12C10.5316 12 10.9267 11.6071 10.9626 11.0686L11.25 6.6736V6.26611C11.25 5.56757 10.6897 5 10 5ZM10 15C10.6904 15 11.25 14.4404 11.25 13.75C11.25 13.0596 10.6904 12.5 10 12.5C9.30964 12.5 8.75 13.0596 8.75 13.75C8.75 14.4404 9.30964 15 10 15Z' fill='#F44336'/></svg>");
+
+
+$form-validation-states: (
+  'invalid': (
+    'color': $form-feedback-invalid-color,
+    'icon': $form-feedback-icon-invalid,
+  ),
+);
+
+
+$zindex-modal: 1050; 
+
+$nav-link-disabled-color: $skdf-color-grey-05;
+
+
+$navbar-padding-y: $spacer;
+
+
+$navbar-brand-font-size: 2rem;
+
+$navbar-brand-height: 2rem;
+
+$navbar-toggler-padding-y: 0;
+$navbar-toggler-padding-x: 0;
+
+
+$navbar-light-toggler-icon-bg: url("data:image/svg+xml,<svg width='24' height='24' viewBox='0 0 24 24' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M3 6C3 5.44772 3.44772 5 4 5H20C20.5523 5 21 5.44772 21 6C21 6.55228 20.5523 7 20 7H4C3.44772 7 3 6.55228 3 6ZM3 12C3 11.4477 3.44772 11 4 11H20C20.5523 11 21 11.4477 21 12C21 12.5523 20.5523 13 20 13H4C3.44772 13 3 12.5523 3 12ZM4 17C3.44772 17 3 17.4477 3 18C3 18.5523 3.44772 19 4 19H20C20.5523 19 21 18.5523 21 18C21 17.4477 20.5523 17 20 17H4Z' fill='#0D47A1'/></svg>");
+$navbar-light-toggler-border-color: transparent;
+
+
+$dropdown-padding-y: 0.75rem;
+$dropdown-border-color: $skdf-color-grey-01;
+$dropdown-divider-bg: $skdf-color-grey-01;
+$dropdown-divider-margin-y: 0.375rem;
+
+
+$dropdown-link-hover-bg: $skdf-color-grey-005;
+
+
+$dropdown-link-disabled-color: $skdf-color-grey-04;
+
+$dropdown-item-padding-y: 0.5rem;
+$dropdown-item-padding-x: 1rem;
+
+
+$dropdown-link-active-color: currentColor;
+$dropdown-link-active-bg: $skdf-color-grey-005;
+
+
+$pagination-padding-y: 0.4375rem;
+$pagination-padding-x: 0.4375rem;
+
+$pagination-font-size: $font-size-sm;
+
+
+$pagination-border-radius: $border-radius-sm;
+$pagination-margin-start: 0;
+$pagination-border-color: $skdf-color-white;
+
+$pagination-focus-color: $skdf-color-primary-04;
+$pagination-focus-bg: $skdf-color-white;
+
+
+$pagination-hover-color: $skdf-color-primary-04;
+$pagination-hover-bg: $skdf-color-white;
+$pagination-hover-border-color: $skdf-color-white;
+
+
+$pagination-active-color: $primary;
+$pagination-active-bg: $skdf-color-white;
+$pagination-active-border-color: $skdf-color-primary-01;
+
+$pagination-disabled-color: $skdf-color-grey-05;
+$pagination-disabled-bg: $skdf-color-white;
+$pagination-disabled-border-color: $skdf-color-white;
+
+$accordion-button-active-bg: white;
+$accordion-button-active-color: $body-color;
+
+
+$accordion-icon-width: 1.5rem;
+$accordion-icon-color: $skdf-color-grey-05;
+
+
+$accordion-button-icon: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='#{$accordion-icon-color}'><path fill-rule='evenodd' clip-rule='evenodd' d='M12.7071 16.7071C12.3166 17.0976 11.6834 17.0976 11.2929 16.7071L5.29289 10.7071C4.90237 10.3166 4.90237 9.68342 5.29289 9.29289C5.68342 8.90237 6.31658 8.90237 6.70711 9.29289L12 14.5858L17.2929 9.29289C17.6834 8.90237 18.3166 8.90237 18.7071 9.29289C19.0976 9.68342 19.0976 10.3166 18.7071 10.7071L12.7071 16.7071Z'/></svg>");
+$accordion-button-active-icon: $accordion-button-icon;
+
+
+$tooltip-max-width: 16.5rem;
+$tooltip-color: $skdf-color-black;
+$tooltip-bg: $skdf-color-white;
+$tooltip-border-radius: 0.5rem;
+$tooltip-opacity: 1;
+$tooltip-padding-y: 1rem;
+$tooltip-padding-x: 1.5rem;
+
+$tooltip-arrow-width: 1rem;
+$tooltip-arrow-height: 0.5rem;
+
+
+$popover-max-width: 40.5rem;
+$popover-border-color: $skdf-color-grey-01;
+$popover-font-size: $font-size-base;
+$popover-border-radius: $border-radius; 
+
+
+$popover-header-bg: none;
+$popover-header-padding-y: 1.5rem;
+$popover-header-padding-x: 1.5rem 0;
+
+
+$popover-body-padding-y: 1.5rem;
+$popover-body-padding-x: 1.5rem;
+
+
+$popover-arrow-width: 1.5rem;
+$popover-arrow-height: 0.75rem;
+
+
+$badge-font-weight: $font-weight-semibold;
+$badge-padding-y: 0.125rem;
+$badge-padding-x: 0.25rem;
+
+
+$modal-inner-padding: 1.5rem;
+
+$modal-dialog-margin-y-sm-up: 1.5rem;
+
+$modal-content-border-width: 0;
+$modal-content-border-radius: $border-radius;
+
+
+$modal-backdrop-bg: $skdf-color-backdrop-bg;
+$modal-backdrop-opacity: $skdf-color-backdrop-opacity;
+
+
+$modal-sm: 384px;
+$modal-md: 696px;
+$modal-lg: 1008px;
+
+
+$breadcrumb-font-size: $font-size-base * 0.875;
+$breadcrumb-divider-color: $skdf-color-grey-03;
+$breadcrumb-active-color: $skdf-color-grey-05;
+
+$breadcrumb-divider: url("data:image/svg+xml,<svg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'><path fill-rule='evenodd' clip-rule='evenodd' d='M8.13805 4.52861C8.3984 4.78896 8.3984 5.21107 8.13805 5.47142L4.13805 9.47142C3.8777 9.73176 3.45559 9.73176 3.19524 9.47142C2.93489 9.21107 2.93489 8.78896 3.19524 8.52861L6.72384 5.00001L3.19524 1.47141C2.93489 1.21107 2.93489 0.788955 3.19524 0.528606C3.45559 0.268256 3.8777 0.268256 4.13805 0.528606L8.13805 4.52861Z' fill='#{$breadcrumb-divider-color}'/></svg>");
+
+
+$btn-close-width: 0.875rem;
+$btn-close-padding-x: 0.3125rem;
+$btn-close-bg: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 14 14' fill='none' ><path fill-rule='evenodd' clip-rule='evenodd' d='M12.2929 0.292893C12.6834 -0.0976311 13.3166 -0.0976311 13.7071 0.292893C14.0976 0.683417 14.0976 1.31658 13.7071 1.70711L8.41422 6.99999L13.7071 12.2929C14.0976 12.6834 14.0976 13.3166 13.7071 13.7071C13.3166 14.0976 12.6834 14.0976 12.2929 13.7071L7.00001 8.4142L1.70711 13.7071C1.31658 14.0976 0.683417 14.0976 0.292893 13.7071C-0.0976313 13.3166 -0.0976308 12.6834 0.292893 12.2929L5.5858 6.99999L0.292912 1.70711C-0.097612 1.31658 -0.097612 0.683417 0.292912 0.292893C0.683437 -0.0976311 1.3166 -0.0976311 1.70713 0.292893L7.00001 5.58578L12.2929 0.292893Z' fill='#0D47A1'/></svg>");
+$btn-close-color: $primary;
+$btn-close-opacity: 1;
+

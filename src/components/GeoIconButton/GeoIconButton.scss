@@ -1,0 +1,82 @@
+.geoIconButton{
+    background-color: #fff;
+    color: #0D47A1 !important;
+    padding: 0.75rem 0.75rem;
+    height: 50px;
+    box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+
+        &:hover{
+            background-color: #f6f8fb;
+            border: 1px solid #f6f8fb;
+            color: #0D47A1;
+            box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+        }
+
+        &:focus{
+            background-color: #f6f8fb;
+            border: 1px solid #f6f8fb;
+            color: #0D47A1;
+            box-shadow: 0 2px 4px rgba(108, 133, 159, 0.12), 0 4px 8px rgba(108, 133, 159, 0.12);
+        }
+}
+
+.geoIconButtonActive{
+    background-color: #e6e6e6;
+}
+
+.geoIconButton--disabled{
+    color: inherit;
+}
+
+.geoIconButton--transparent{
+    background-color: transparent;
+    color: inherit;
+    padding: 0;
+    border: none;
+    outline: none;
+    margin: 0;
+    
+    &:hover{
+        background-color: transparent !important;
+        color: inherit !important;
+        border: none;
+        outline: none;
+    }
+
+    &:focus{
+        background-color: transparent !important;
+        color: inherit !important;
+        border: none;
+        outline: none;
+    }
+    
+    &:active{
+        background-color: transparent !important;
+        color: inherit !important;
+        border: none;
+        outline: none;
+    }
+
+    &:checked{
+        background-color: transparent !important;
+        color: inherit !important;
+        border: none;
+        outline: none;
+    }
+}
+
+.geoIconButton__content{
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.geoIconButton__noleft-radius{
+    border-radius: 0px 12px 12px 0px;
+}
+
+.geoIconButton__leftside{
+    position: fixed;
+    top: 25px;
+    left: 60px;
+    z-index: 15;
+}

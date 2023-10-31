@@ -1,0 +1,43 @@
+@import '../../../variables.scss';
+
+.GeoInterfaceSheetBody {
+  padding-top: 15px;
+  padding-left: 20px;
+  width: 100%;
+  overflow-y: auto;
+  min-height: 150px;
+  height: $geo-diag-interface-sheet-height;
+}
+
+// .GeoInterfaceSheet > tbody {
+//   display: block;
+//   overflow: auto;
+// }
+
+.GeoInterfaceSheetBody__title {
+  padding-left: 20px;
+  font-size: 16px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 10px;
+}
+
+.GeoInterfaceSheetNoData {
+  width: 100%;
+  height: 50px;
+  padding: 20px;
+  text-align: center;
+}
+
+.GeoInterfaceSheet {
+  color: #0D47A1 !important;
+  padding: 0.75rem 0.75rem;
+  height: 30px;
+  display: flex;
+  position: relative;
+}
+
+
+.GeoInterfaceSheet>div {
+  margin: 10px;
+}

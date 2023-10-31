@@ -1,0 +1,216 @@
+export const statFormMetaMock = {
+  TITLE: 'Форма 1',
+  OKUD: '0000001',
+  CODE: '0000001',
+  CUSTOM: true,
+  CHAPTER: 'Раздел 2',
+  PERIOD: 'YYYYM3Q1',
+  RESPONDER: 2323,
+  REVIEWER: 2323,
+
+  PRE_HEADER: {
+    TEXT: 'Что-то написанное сверху таблицы',
+    STYLE: {
+      Font: 'Arial',
+      Size: 8,
+      VertAlignment: 'Center',
+      HorAlignment: 'Center',
+    },
+  },
+  HEADER: {
+    HEADER_COLUMNS: 8,
+    HEADER_ROWS: 4,
+    STYLYE: {
+      Font: 'Arial',
+      Size: 8,
+      VertAlignment: 'Center',
+      HorAlignment: 'Center',
+    },
+    HEADERS: [
+      {
+        HEADER_ID: 1,
+        HEADER_CAPTION: 'Показатель',
+        HEADER_GRID: [1, 1, 4, 1],
+        //[rowStart, colStart, rowEnd, colEnd]
+      },
+      {
+        HEADER_ID: 2,
+        HEADER_CAPTION: 'N строки',
+        HEADER_GRID: [1, 2, 4, 2],
+      },
+      {
+        HEADER_ID: 3,
+        HEADER_CAPTION: 'Заголовок 3',
+        HEADER_GRID: [1, 3, 1, 7],
+      },
+      {
+        HEADER_ID: 4,
+        HEADER_CAPTION: 'Заголовок 4',
+        HEADER_GRID: [2, 3, 2, 5],
+      },
+      {
+        HEADER_ID: 5,
+        HEADER_CAPTION: 'Заголовок 5',
+        HEADER_GRID: [3, 3, 3, 4],
+      },
+      {
+        HEADER_ID: 6,
+        HEADER_CAPTION: 'Заголовок 6',
+        HEADER_GRID: [4, 3, 4, 3],
+      },
+      {
+        HEADER_ID: 7,
+        HEADER_CAPTION: 'Заголовок 7',
+        HEADER_GRID: [4, 4, 4, 4],
+      },
+      {
+        HEADER_ID: 8,
+        HEADER_CAPTION: 'Заголовок 8',
+        HEADER_GRID: [3, 5, 4, 5],
+      },
+      {
+        HEADER_ID: 9,
+        HEADER_CAPTION: 'Заголовок 9',
+        HEADER_GRID: [2, 6, 3, 7],
+      },
+      {
+        HEADER_ID: 8,
+        HEADER_CAPTION: 'Заголовок 10',
+        HEADER_GRID: [4, 6, 4, 6],
+      },
+      {
+        HEADER_ID: 9,
+        HEADER_CAPTION: 'Заголовок 11',
+        HEADER_GRID: [4, 7, 4, 7],
+      },
+      {
+        HEADER_ID: 10,
+        HEADER_CAPTION: 'ОКЕИ',
+        HEADER_GRID: [1, 8, 4, 8],
+      },
+    ],
+  },
+  COLUMNS: {
+    COLUMN_LABELS: ['А', 'Б', '1', '2', '3', '4', '5', 'X'],
+    COLUMN_WIDTHS_PX: [100, 120, 60, 60, 60, 60, 60],
+    COLUMN_WIDTHS_MM: [100, 120, 60, 60, 60],
+    FORMULAS: [
+      {
+        COLUMN_ID: 5,
+        FORMULA: '3+4',
+      },
+    ],
+    OKEI_COLUMN: 8,
+    ROW_NUM_COLUMN: 2,
+  },
+  ROWS: [
+    {
+      ROW_NUM: 101,
+      ROW_CAPTION: 'Всего',
+      OKEI: 768,
+      ROW_FORMULA: '1011+1012',
+      IDENT: 0,
+    },
+    {
+      ROW_NUM: 1011,
+      ROW_CAPTION: 'Показатель 11',
+      OKEI: 768,
+      IDENT: 0,
+    },
+    {
+      ROW_NUM: 1012,
+      ROW_CAPTION: 'Показатель 12',
+      OKEI: 768,
+      IDENT: 0,
+    },
+    // {
+    //   ROW_NUM: 201,
+    //   ROW_CAPTION: 'Всего',
+    //   OKEI: 768,
+    //   ROW_FORMULA: '2011+2012',
+    //   IDENT: 0,
+    // },
+    // {
+    //   ROW_NUM: 2011,
+    //   ROW_CAPTION: 'Показатель 21',
+    //   OKEI: 768,
+    //   IDENT: 0,
+    // },
+    // {
+    //   ROW_NUM: 2012,
+    //   ROW_CAPTION: 'Показатель 22',
+    //   OKEI: 768,
+    //   IDENT: 0,
+    // },
+  ],
+  ROW_BREAKS: [
+    {
+      PREV_ROW: 1012,
+      BREAK_CAPTION: 'Это разрыв',
+      IDENT: 0,
+      STYLE: {
+        FontWeight: 'Bold',
+        Alignment: 'Center',
+      },
+    },
+  ],
+  DATA: [
+    // {
+    //   ROW_ID: 1,
+    //   VALUES: [3, 5, 3, 4, 5, 6],
+    // },
+    // {
+    //   ROW_ID: 2,
+    //   VALUES: [4, 653, 32, 34, 542, 5323],
+    // },
+    // {
+    //   ROW_ID: 3,
+    //   VALUES: [4, 653, 32, 34, 542, 5323],
+    // },
+    {
+      ROW_ID: 1,
+      COLUMN_ID: 1,
+      VALUE: 373,
+    },
+    {
+      ROW_ID: 1,
+      COLUMN_ID: 2,
+      VALUE: 444,
+    },
+    {
+      ROW_ID: 1,
+      COLUMN_ID: 3,
+      VALUE: 444,
+    },
+    {
+      ROW_ID: 2,
+      COLUMN_ID: 1,
+      VALUE: 373,
+    },
+
+    {
+      ROW_ID: 3,
+      COLUMN_ID: 1,
+      VALUE: 373,
+    },
+  ],
+  FOOTER: {
+    CAPTION: 'Заголовок подвала',
+    DATA: [
+      {
+        ID: 1,
+        CAPTION: 'Параметр 1',
+        NO_VALUE: 'False',
+        VALUE: 3723,
+        IDENT: 6,
+      },
+      {
+        ID: 2,
+        CAPTION: 'Параметр 2',
+        NO_VALUE: 'False',
+        VALUE: 3724,
+        IDENT: 6,
+      },
+    ],
+  },
+};

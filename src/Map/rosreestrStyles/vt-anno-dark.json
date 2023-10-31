@@ -1,0 +1,1807 @@
+{
+  "version": 8,
+  "sprite": "../sprites/sprite",
+  "glyphs": "../fonts/{fontstack}/{range}.pbf",
+  "sources": {
+    "esri": {
+      "type": "vector",
+      "attribution": "© Участники OpenStreetMap",
+      "bounds": [-180, -85.0511, 180, 84.0012],
+      "minzoom": 0,
+      "maxzoom": 19,
+      "scheme": "xyz",
+      "url": "../../"
+    }
+  },
+  "layers": [
+    {
+      "id": "Гидрография/Гидрография линии М100/label/150 и крупнее - Реки",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография линии М100/label",
+      "minzoom": 11,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.111111],
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М100/label/150 000 и крупнее - Озера и прочее",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М100/label",
+      "filter": ["==", "_label_class", 2],
+      "minzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 12, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М100/label/150 000 и крупнее - Острова",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М100/label",
+      "filter": ["==", "_label_class", 4],
+      "minzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 12, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#E1E1E1", "text-halo-color": "#828282", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М100/label/150 000 и крупнее - Заливы и лиманы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М100/label",
+      "filter": ["==", "_label_class", 3],
+      "minzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 14.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М100/label/150 000 и крупнее - Моря",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М100/label",
+      "filter": ["==", "_label_class", 1],
+      "minzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М100/label/150 000 и крупнее - Океаны",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М100/label",
+      "filter": ["==", "_label_class", 0],
+      "minzoom": 11,
+      "layout": { "text-font": ["Verdana Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF", "text-halo-color": "#FFFFFF", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография линии M500/label/600 000 -300 000 - Реки",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография линии M500/label",
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.111111],
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М500/label/600 000 - 300 000 - Озера и прочее",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М500/label",
+      "filter": ["==", "_label_class", 2],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 12, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М500/label/600 000 - 300 000 - Острова",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М500/label",
+      "filter": ["==", "_label_class", 4],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 12, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#E1E1E1", "text-halo-color": "#828282", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М500/label/600 000 - 300 000 - Заливы и лиманы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М500/label",
+      "filter": ["==", "_label_class", 3],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 14.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М500/label/600 000 - 300 000 - Моря",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М500/label",
+      "filter": ["==", "_label_class", 1],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М500/label/600 000 - 300 000 - Океаны",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М500/label",
+      "filter": ["==", "_label_class", 0],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": { "text-font": ["Verdana Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF", "text-halo-color": "#FFFFFF", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография линии М1/label/1 200 000 - Реки",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография линии М1/label",
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.111111],
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М1/label/1 200 000 - Озера",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М1/label",
+      "filter": ["==", "_label_class", 2],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 12, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М1/label/1 200 000 - Острова",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М1/label",
+      "filter": ["==", "_label_class", 4],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 12, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#E1E1E1", "text-halo-color": "#828282", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М1/label/1 2000 000 - Заливы и лиманы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М1/label",
+      "filter": ["==", "_label_class", 3],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 14.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М1/label/1 200 000 - Моря",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М1/label",
+      "filter": ["==", "_label_class", 1],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М1/label/1 200 000 - Океаны",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М1/label",
+      "filter": ["==", "_label_class", 0],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": { "text-font": ["Verdana Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF", "text-halo-color": "#FFFFFF", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография линии M08/label/20 000 000 - 5 000 000 - Главные реки",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография линии M08/label",
+      "filter": ["==", "_label_class", 1],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.125],
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/2 500 000 - Озера и прочее",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 8],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 10.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/20 000 000  - 5 000 000 - Озера",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 7],
+      "minzoom": 4,
+      "maxzoom": 7,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 10.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/40 000 000 - 2 500 000 - Острова",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 9],
+      "minzoom": 4,
+      "maxzoom": 8,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 10.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#E1E1E1", "text-halo-color": "#686868", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/5 000 000 - 2 500 000 - Залив и лиман",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 10],
+      "minzoom": 6,
+      "maxzoom": 8,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 14.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/75 000 000 - 40 000 000 - Моря",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 3],
+      "minzoom": 2,
+      "maxzoom": 4,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 10.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/20 000 000 - Моря",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 4],
+      "minzoom": 4,
+      "maxzoom": 5,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 13.3333, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/10 000 000 - Моря",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 5],
+      "minzoom": 5,
+      "maxzoom": 6,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 13.3333, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/5 000 000 - 2 500 000 - Моря",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 6],
+      "minzoom": 6,
+      "maxzoom": 8,
+      "layout": { "text-font": ["Calibri Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/5 000 000 - 2 500 000 - Океаны",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 2],
+      "minzoom": 6,
+      "maxzoom": 8,
+      "layout": { "text-font": ["Verdana Regular"], "text-size": 16, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF", "text-halo-color": "#FFFFFF", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/20 000 000 - 10 000 000 - Океаны",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 1],
+      "minzoom": 4,
+      "maxzoom": 6,
+      "layout": { "text-font": ["Verdana Regular"], "text-size": 14.6667, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Гидрография/Гидрография полигоны М08/label/75 000 000 - 40 000 000 - Океаны",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография полигоны М08/label",
+      "filter": ["==", "_label_class", 0],
+      "minzoom": 2,
+      "maxzoom": 4,
+      "layout": { "text-font": ["Verdana Regular"], "text-size": 13.3333, "text-field": "{_name}", "text-optional": true },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Адреса/Улицы/label/2 500 и крупнее - второстепенные",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Улицы/label",
+      "filter": ["==", "_label_class", 6],
+      "minzoom": 17,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Arial Regular"],
+        "text-size": 13.3333,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 2.66667 }
+    },
+    {
+      "id": "Адреса/Улицы/label/2 500 и крупнее - главные улицы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Улицы/label",
+      "filter": ["==", "_label_class", 1],
+      "minzoom": 17,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Arial Bold"],
+        "text-size": 14.6667,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 2.66667 }
+    },
+    {
+      "id": "Адреса/Улицы/label/10 000 Второстепенные улицы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Улицы/label",
+      "filter": ["==", "_label_class", 5],
+      "minzoom": 15,
+      "maxzoom": 17,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Arial Regular"],
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Адреса/Улицы/label/10 000 Главные улицы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Улицы/label",
+      "filter": ["==", "_label_class", 0],
+      "minzoom": 15,
+      "maxzoom": 17,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Arial Bold"],
+        "text-size": 13.3333,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Адреса/Улицы/label/20 000 - главные улицы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Улицы/label",
+      "filter": ["==", "_label_class", 4],
+      "minzoom": 14,
+      "maxzoom": 15,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Arial Bold"],
+        "text-size": 12,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 2 }
+    },
+    {
+      "id": "Адреса/Улицы/label/20 000 - второстепенные улицы",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Улицы/label",
+      "filter": ["==", "_label_class", 3],
+      "minzoom": 14,
+      "maxzoom": 15,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Arial Regular"],
+        "text-size": 10.6667,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 2 }
+    },
+    {
+      "id": "Адреса/Улицы/label/30 000",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Улицы/label",
+      "filter": ["==", "_label_class", 2],
+      "minzoom": 13,
+      "maxzoom": 14,
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Arial Bold"],
+        "text-size": 10.6667,
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 2 }
+    },
+    {
+      "id": "Адреса/Дома/label/2500 и крупнее",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Дома",
+      "filter": ["==", "_label_class1", 1],
+      "minzoom": 17,
+      "layout": {
+        "text-font": ["Arial Bold"],
+        "text-size": 13.3333,
+        "text-anchor": "center",
+        "text-field": "{_name1}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Адреса/Дома/label/5 000",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Дома",
+      "filter": ["==", "_label_class2", 2],
+      "minzoom": 16,
+      "maxzoom": 17,
+      "layout": {
+        "text-font": ["Arial Bold"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name2}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Адреса/Дома/label/10 000",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Дома",
+      "filter": ["==", "_label_class", 0],
+      "minzoom": 15,
+      "maxzoom": 16,
+      "layout": {
+        "text-font": ["Arial Bold"],
+        "text-size": 10.6667,
+        "text-anchor": "center",
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - Мелкие НП",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class58", 58],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name58}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/300 000 - Мелкие НП",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class57", 57],
+      "minzoom": 10,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Italic"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name57}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - Особо малые НП",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class56", 56],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0589256, 0.241074],
+        "text-field": "{_name56}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/300 000 - Особо малые НП",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class55", 55],
+      "minzoom": 10,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 13.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0707107, 0.229289],
+        "text-field": "{_name55}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - Особо малые НП",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class54", 54],
+      "minzoom": 9,
+      "maxzoom": 10,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name54}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - НП>10k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class53", 53],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0505076, 0.249492],
+        "text-field": "{_name53}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/300 000 - НП>10k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class52", 52],
+      "minzoom": 10,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 14.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0642824, 0.235718],
+        "text-field": "{_name52}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/1 200 000 - Особо малые",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class62", 62],
+      "minzoom": 9,
+      "maxzoom": 10,
+      "layout": {
+        "text-font": ["Calibri Italic"],
+        "text-size": 10.6667,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.125, 0],
+        "text-field": "{_name62}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/1 200 000 - НП>10k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class51", 51],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 13.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0707107, 0.229289],
+        "text-field": "{_name51}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - НП>10k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class50", 50],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name50}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/5 000 000 - НП>10k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class49", 49],
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "text-font": ["Calibri Italic"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0883883, 0.211612],
+        "text-field": "{_name49}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - Города<50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class48", 48],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0505076, 0.249492],
+        "text-field": "{_name48}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/300 000 - Города<50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class47", 47],
+      "minzoom": 10,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0589256, 0.241074],
+        "text-field": "{_name47}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - Города<50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class46", 46],
+      "minzoom": 9,
+      "maxzoom": 10,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 14.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0642824, 0.235718],
+        "text-field": "{_name46}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - 1 200 000 - Города<50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class45", 45],
+      "minzoom": 7,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 13.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0707107, 0.229289],
+        "text-field": "{_name45}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/5 000 000 - Города<50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class44", 44],
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name44}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - НП>50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class43", 43],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0505076, 0.249492],
+        "text-field": "{_name43}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/300 000 - НП>50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class42", 42],
+      "minzoom": 10,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0589256, 0.241074],
+        "text-field": "{_name42}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - НП>50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class41", 41],
+      "minzoom": 9,
+      "maxzoom": 10,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 14.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0642824, 0.235718],
+        "text-field": "{_name41}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - 1 200 000 - НП>50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class40", 40],
+      "minzoom": 7,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 13.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0707107, 0.229289],
+        "text-field": "{_name40}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/5 000 000 - НП>50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class39", 39],
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name39}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 2.66667 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/10 000 000 - НП>50k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class38", 38],
+      "minzoom": 5,
+      "maxzoom": 6,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0883883, 0.211612],
+        "text-field": "{_name38}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - Центры МР",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class37", 37],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0505076, 0.249492],
+        "text-field": "{_name37}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/300 000 - Центры МР",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class36", 36],
+      "minzoom": 10,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0589256, 0.241074],
+        "text-field": "{_name36}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - Центры МР",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class35", 35],
+      "minzoom": 9,
+      "maxzoom": 10,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 14.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0642824, 0.235718],
+        "text-field": "{_name35}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/1 200 000 - Центры МР",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class34", 34],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name34}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 2.66667 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - Центры МР",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class33", 33],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0883883, 0.211612],
+        "text-field": "{_name33}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - НП>100k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class32", 32],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 21.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0441942, 0.255806],
+        "text-field": "{_name32}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - 300 000 - НП>100k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class31", 31],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0505076, 0.249492],
+        "text-field": "{_name31}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/1 200 000 - НП>100k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class30", 30],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 16,
+        "text-anchor": "left",
+        "text-justify": "left",
+        "text-offset": [0.0833333, 0],
+        "text-field": "{_name30}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - НП>100k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class29", 29],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 14.6667,
+        "text-anchor": "left",
+        "text-justify": "left",
+        "text-offset": [0.0909091, 0],
+        "text-field": "{_name29}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/5 000 000 - НП>100k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class28", 28],
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 13.3333,
+        "text-anchor": "left",
+        "text-justify": "left",
+        "text-offset": [0.1, 0],
+        "text-field": "{_name28}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/10 000 000 - НП>100k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class27", 27],
+      "minzoom": 5,
+      "maxzoom": 6,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "left",
+        "text-justify": "left",
+        "text-offset": [0.111111, 0],
+        "text-field": "{_name27}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/20 000 000 - НП>100k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class26", 26],
+      "minzoom": 4,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "left",
+        "text-justify": "left",
+        "text-offset": [0.125, 0],
+        "text-field": "{_name26}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class25", 25],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 24,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0392837, 0.260716],
+        "text-field": "{_name25}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - 300 000 - Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class24", 24],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 21.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0441942, 0.255806],
+        "text-field": "{_name24}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/1 200 000 - Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class23", 23],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0505076, 0.249492],
+        "text-field": "{_name23}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class22", 22],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0589256, 0.241074],
+        "text-field": "{_name22}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/5 000 000 - Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class21", 21],
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 14.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0642824, 0.235718],
+        "text-field": "{_name21}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/10 000 000 - Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class20", 20],
+      "minzoom": 5,
+      "maxzoom": 6,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 13.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0707107, 0.229289],
+        "text-field": "{_name20}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/20 000 000 - Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class19", 19],
+      "minzoom": 4,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name19}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/40 000 000 Города>500k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class60", 60],
+      "minzoom": 3,
+      "maxzoom": 4,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0883883, 0.211612],
+        "text-field": "{_name60}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/20 000 000 - Центры СРФ",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class59", 59],
+      "minzoom": 4,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name59}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/40 000 000 - Центры СРФ",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class18", 18],
+      "minzoom": 3,
+      "maxzoom": 4,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0883883, 0.211612],
+        "text-field": "{_name18}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class17", 17],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 29.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0321412, 0.267859],
+        "text-field": "{_name17}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - 300 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class16", 16],
+      "minzoom": 9,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 24,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0392837, 0.260716],
+        "text-field": "{_name16}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/1 200 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class15", 15],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 21.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0441942, 0.255806],
+        "text-field": "{_name15}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/5 000 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class13", 13],
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 16,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0589256, 0.241074],
+        "text-field": "{_name13}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/10 000 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class12", 12],
+      "minzoom": 5,
+      "maxzoom": 6,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 14.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0642824, 0.235718],
+        "text-field": "{_name12}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/20 000 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class11", 11],
+      "minzoom": 4,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 13.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0707107, 0.229289],
+        "text-field": "{_name11}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/40 000 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class10", 10],
+      "minzoom": 3,
+      "maxzoom": 4,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name10}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class14", 14],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0505076, 0.249492],
+        "text-field": "{_name14}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 000 - 75 000 000 - Миллионники",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class9", 9],
+      "minzoom": 2,
+      "maxzoom": 3,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 12,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0785674, 0.221433],
+        "text-field": "{_name9}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class8", 8],
+      "minzoom": 11,
+      "maxzoom": 12,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 32,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.0416667, 0],
+        "text-field": "{_name8}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/300 000 - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class7", 7],
+      "minzoom": 10,
+      "maxzoom": 11,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 29.3333,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.0454545, 0],
+        "text-field": "{_name7}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class6", 6],
+      "minzoom": 9,
+      "maxzoom": 10,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 26.6667,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.05, 0],
+        "text-field": "{_name6}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/1 200 000 - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class5", 5],
+      "minzoom": 8,
+      "maxzoom": 9,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 24,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.0555556, 0],
+        "text-field": "{_name5}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/2 500 000 - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class4", 4],
+      "minzoom": 7,
+      "maxzoom": 8,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 21.3333,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.0625, 0],
+        "text-field": "{_name4}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/5 000 000  - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class3", 3],
+      "minzoom": 6,
+      "maxzoom": 7,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 18.6667,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.0714286, 0],
+        "text-field": "{_name3}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/10 000 000 - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class2", 2],
+      "minzoom": 5,
+      "maxzoom": 6,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 16,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.0833333, 0],
+        "text-field": "{_name2}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/20 000 000 - Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class1", 1],
+      "minzoom": 4,
+      "maxzoom": 5,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 14.6667,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.0909091, 0],
+        "text-field": "{_name1}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/150 000 000 - 40 000 000 Москва",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class", 0],
+      "minzoom": 2,
+      "maxzoom": 4,
+      "layout": {
+        "text-font": ["Calibri Bold"],
+        "text-size": 13.3333,
+        "text-anchor": "right",
+        "text-justify": "right",
+        "text-offset": [-0.1, 0],
+        "text-field": "{_name}",
+        "text-allow-overlap": true,
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#000000", "text-halo-width": 1.33333 }
+    },
+    {
+      "id": "Гидрография/Гидрография линии M08/label/2 500 000 - Все реки",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Гидрография линии M08/label",
+      "filter": ["==", "_label_class", 2],
+      "layout": {
+        "symbol-placement": "line",
+        "symbol-spacing": 1000,
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom",
+        "text-offset": [0, -0.125],
+        "text-field": "{_name}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#BED2FF" }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/sparsely populated areas (36млн)",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class64", 64],
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 10.6667,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0883883, 0.211612],
+        "text-field": "{_name64}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#E1E1E1" }
+    },
+    {
+      "id": "Населенные пункты/Населенные пункты (Точки)/label/600 000 - НП>10k",
+      "type": "symbol",
+      "source": "esri",
+      "source-layer": "Населенные пункты (Точки)",
+      "filter": ["==", "_label_class63", 63],
+      "minzoom": 3,
+      "maxzoom": 6,
+      "layout": {
+        "text-font": ["Calibri Regular"],
+        "text-size": 13.3333,
+        "text-anchor": "bottom-left",
+        "text-justify": "left",
+        "text-offset": [0.0707107, 0.229289],
+        "text-field": "{_name63}",
+        "text-optional": true
+      },
+      "paint": { "text-color": "#FFFFFF", "text-halo-color": "#343434", "text-halo-width": 1.33333 }
+    }
+  ]
+}

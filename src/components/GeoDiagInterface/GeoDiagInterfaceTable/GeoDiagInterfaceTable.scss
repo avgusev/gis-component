@@ -1,0 +1,23 @@
+.GeoPagination__container {
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px;
+    color: #0D47A1;
+}
+
+.GeoPagination__info {
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: #d3d4d5;
+}
+
+.GeoDiagInterfaceTable__title {
+    padding-left: 20px;
+    font-size: 16px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    margin-top: 40px;
+}

@@ -1,0 +1,29 @@
+@import 'skdf-colors';
+@import 'react-toastify/scss/main';
+
+:root {
+  --toastify-color-light: #{$skdf-color-white};
+  --toastify-color-dark: #{$skdf-color-black};
+  --toastify-color-info: #{$skdf-color-primary-04};
+  --toastify-color-success: #{$skdf-color-success};
+  --toastify-color-warning: #{$skdf-color-warning};
+  --toastify-color-error: #{$skdf-color-error};
+
+  --toastify-toast-width: 21.5rem;
+
+  --toastify-toast-min-height: 3.5rem;
+
+  --toastify-font-family: 'Noto Sans', sans-serif;
+ 
+}
+
+.Toastify__toast {
+  font-size: 0.875rem;
+  line-height: 1.4285714286;
+  padding: 1rem 1rem 1rem 1.5rem;
+}
+
+.Toastify__toast-body {
+  padding: 0;
+  margin: 0;
+}

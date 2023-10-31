@@ -1,0 +1,24 @@
+export type InputRangeProps = {
+  id?: string;
+  label?: string;
+  tooltipPlacement?: import('@restart/ui/usePopper').Placement;
+  rangeType: 'number' | 'text';
+  min?: number;
+  max?: number;
+  placeholderMin?: string;
+  placeholderMax?: string;
+  // minRequired?: boolean;
+  // maxRequired?: boolean;
+  step?: number;
+  disabled?: boolean;
+  value?: string[] | number[];
+  // className?: string;
+  onChange?: (value: string[] | number[]) => void;
+  // onClickHandler?: () => void;
+  size?: 'fullwidth' | 'halfwidth' | 'width300';
+  // isPicket?: boolean;
+  setIsValidRange?: (value: boolean) => void;
+  isMaxRequired?: boolean;
+  isMinRequired?: boolean;
+  isValidation?: boolean;
+};

@@ -1,0 +1,121 @@
+@import './skdf-colors';
+@import './bs_variable_overrides';
+
+.skdf-select-container .skdf-select {
+  &__control {
+    // height: 2.5rem;
+    cursor: pointer;
+    border-radius: $border-radius-sm;
+    transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+    box-shadow: none;
+
+    &:hover {
+      border-color: $primary;
+
+      .skdf-select__dropdown-indicator {
+        color: $primary;
+      }
+    }
+
+    &--is-focused {
+      border-color: $primary;
+      background-color: $input-focus-bg;
+
+      .skdf-select__dropdown-indicator {
+        color: $primary;
+      }
+    }
+
+    &--menu-is-open {
+      border-radius: $border-radius-sm $border-radius-sm 0 0;
+
+      .skdf-select__dropdown-indicator {
+        transform: rotate(180deg);
+      }
+    }
+  }
+
+  &__placeholder {
+    color: $input-placeholder-color;
+    margin: 0;
+  }
+
+  &__value-container {
+    padding: 0.4375rem 0.6875rem;
+  }
+
+  &__input-container {
+    margin: 0;
+    padding: 0;
+  }
+
+  &__dropdown-indicator {
+    color: $input-placeholder-color;
+    padding: 0 0.6875rem;
+    transition: transform 0.2s ease-in-out, color 0.15s ease-in-out;
+  }
+
+  &__menu {
+    border: 1px solid $primary;
+    border-top: none;
+    border-radius: 0 0 $border-radius-sm $border-radius-sm;
+    margin: 0;
+    overflow: hidden;
+    @extend .skdf-shadow-down-8dp;
+
+    &-list {
+      padding: 0.5rem 0;
+      // overflow: overlay; ???
+
+      &--is-multi {
+        .skdf-select__option {
+          &--is-focused {
+            background-color: $skdf-color-grey-005;
+          }
+
+          &--is-selected {
+            color: inherit;
+            background-color: inherit;
+          }
+        }
+      }
+    }
+  }
+
+  &__option {
+    cursor: pointer;
+
+    &--is-focused,
+    &--is-focused:active {
+      color: inherit;
+      background-color: $skdf-color-grey-005;
+    }
+
+    &--is-selected,
+    &--is-focused:active {
+      color: $skdf-color-primary-05;
+      background-color: $skdf-color-primary-005;
+    }
+
+    mark {
+      color: $skdf-color-primary-05;
+      background-color: inherit;
+      padding: 0;
+      font-weight: 600;
+    }
+  }
+
+  &__menu-notice--no-options {
+    color: $input-placeholder-color;
+    text-align: left;
+  }
+
+  &__clear-indicator {
+    padding: 0;
+    color: $input-placeholder-color;
+
+    &:hover {
+      color: $input-placeholder-color;
+    }
+  }
+}

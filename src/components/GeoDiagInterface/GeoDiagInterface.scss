@@ -1,0 +1,37 @@
+@import '../../variables.scss';
+
+.GeoDiagInterface__container {
+  // margin-left: 100px;
+  width: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.GeoDiagInterface__container__f-col {
+  width: $geo-diag-interface-sidebar-width;
+}
+
+.GeoDiagInterface__container__f-col--close {
+  width: 0;
+}
+
+.GeoDiagInterface__container__s-col {
+  width: $geo-diag-interface-main-body-width;
+  height: 100vh;
+}
+
+.GeoDiagInterface__container__s-col--only-one {
+  width: 100%;
+  height: 100vh;
+}
+
+.GeoDiagInterface__container__scroll {
+  margin-top: $geo-diag-interface-header-height;
+  overflow: auto;
+  width: 100%;
+}
+
+.GeoDiagInterface__container__scroll--only-one {
+  margin-top: 0
+}
+

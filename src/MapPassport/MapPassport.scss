@@ -1,0 +1,89 @@
+//.gitkeep
+
+
+.ol-map {
+  width: "100%";
+  height:"100%";
+  border-radius: 0.5rem !important;
+}
+.ol-viewport {
+  border-radius: 0.5rem !important;
+}
+.ol-control {
+  position: absolute;
+  background-color: rgba(255,255,255,0.4);
+  border-radius: 4px;
+  padding: 2px;
+}
+.ol-full-screen {
+  top: .5em;
+  right: .5em;
+}
+
+.mapPassportContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.mapContainer {
+  position: relative;
+  min-width: 100px;
+  min-height: 100px;
+  width: 100%;
+  height: 100%;
+}
+
+.backDrop {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  background-color: #fff;
+  border-radius: 0.5rem;
+  // opacity: 0.5;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 19;
+}
+.spinnerContainer {
+  position: relative;
+  top: 50%;
+  left: 50%;
+  margin-left: -20px;
+}
+
+.redirectButtonContainer {
+  // position: absolute;
+  // top: 0px; 
+  // left: 0px; 
+  // width: 100%; 
+  // height: 100%; 
+  z-index: 4;
+}
+
+.redirectButton {
+  position: absolute;
+  bottom: 0px;
+  z-index: 10;
+}
+
+  .scrollbar {
+    overflow-y: auto;
+    scroll-behavior: smooth;
+
+  }
+  .scrollbardiv {
+    scrollbar-color: #eeeeee #ececec;
+    
+  }
+  .scrollbardiv::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+    background-color: #ffffff;
+  }
+  
+  .scrollbardiv::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: #f0f0f0;
+  }

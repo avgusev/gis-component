@@ -1,0 +1,86 @@
+.GeoLayersSwitcher__parent {
+  position: relative;
+  display: flex;
+}
+
+.cursorLayers {
+  cursor: pointer;
+}
+
+.testingCss {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50px;
+  height: 50px;
+  background-color: #0c6bf8;
+  z-index: 888;
+  opacity: 0;
+  transition: opacity 3000s;
+}
+
+.GeoLayersSwitcher__modal {
+  height: calc(100vh - 125px);
+  width: 23rem;
+  position: absolute;
+  inset: 70px -115px auto auto;
+  transform: translate(-117px, 0px);
+  border-radius: 0.75rem;
+  transition: 'top' 1s !important;
+  -moz-transition: all 1s ease-in; /* Firefox 4 */
+  -webkit-transition: all 1s ease-in; /* Safari 和 Chrome */
+  -o-transition: all 1s ease-in; /* Opera */
+  overflow: hidden;
+}
+
+.GeoLayersSwitcher__modal__body {
+  min-height: 300px;
+  height: calc(100vh - 210px);
+  overflow-y: auto;
+  background-color: #fff;
+  z-index: 999;
+
+  border-radius: 12px !important;
+}
+
+.GeoLayersSwitcher__modal__section {
+  margin-bottom: 30px;
+}
+
+.GeoLayersSwitcher__modal__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+  border: none;
+  border-radius: 0px 0px 12px 12px !important;
+  padding-top: 18px;
+  padding-bottom: 25px;
+
+  box-shadow: 1px 0px 2px rgba(108, 133, 159, 0.14), 2px 0px 4px rgba(108, 133, 159, 0.14) !important;
+  // // box-shadow: 2px 0px 4px #6C859F;
+  // box-shadow: -6px -16px teal;
+}
+
+.GeoLayersSwitcher__icon__item {
+  color: #0d47a1 !important;
+  cursor: pointer !important;
+}
+
+.GeoLayersSwitcher__action__title {
+  font-weight: bold;
+  letter-spacing: 0;
+}
+
+.GeoLayersSwitcher__gutter {
+  --skdf-gutter-x: 1.5rem !important;
+}
+
+.GeoLayersSwitcher__item__range {
+  margin-bottom: 20px;
+}
+
+// .GeoLayersIconButton__opened {
+//     border: 2px solid #0d47a1
+// }

@@ -1,0 +1,89 @@
+.GeoFilters__card {
+  width: 400px !important;
+  position: fixed;
+  z-index: 18;
+  height: 100vh;
+  background-color: #fff;
+  border-radius: 0;
+  border: 0;
+  overflow: hidden;
+
+  padding-top: 24px;
+}
+
+.GeoFilters__card__header {
+  background-color: #fff;
+  padding: 0 24px !important;
+  border: none;
+  border-radius: 0 !important;
+}
+
+.GeoFilters__content {
+  max-height: calc(100vh - 80px);
+  overflow-y: auto;
+
+  padding-left: 24px;
+  padding-right: 24px !important;
+  margin-top: 30px;
+  margin-right: 0 !important;
+}
+
+.GeoFilters__group__title {
+  font-weight: bold;
+  letter-spacing: 0;
+  font-size: 20px;
+}
+
+.GeoCheckboxGroup__input {
+  width: 18px;
+  height: 18px;
+
+  letter-spacing: 0;
+
+  border-radius: 4px !important;
+}
+
+.GeoFilters__group__accordion__body__checkbox {
+  width: 16px;
+  height: 16px;
+
+  letter-spacing: 0;
+
+  border-radius: 4px;
+}
+
+.GeoFilters__group__accordion__body__label {
+  font-weight: lighter;
+  letter-spacing: 0;
+  font-size: 16px;
+}
+
+.GeoFilters__footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  background-color: #fff;
+  border: none;
+  border-radius: 0 !important;
+  padding-top: 18px;
+  padding-bottom: 25px;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  box-shadow: 1px 0px 2px rgba(108, 133, 159, 0.14), 2px 0px 4px rgba(108, 133, 159, 0.14);
+}
+
+.GeoFilters__footer__item:not(:last-child){
+  margin-bottom: 10px ;
+}
+
+// .GeoFilters__close__btn {
+//   //position: fixed;
+//   position: absolute;
+//   top: 25px;
+//   // left: 460px;
+//   left: 400px;
+//   z-index: 15;
+//   border-radius: 0px 12px 12px 0px;
+// }

@@ -1,0 +1,20 @@
+.GeoKeyboardArrows__container {
+  position: absolute;
+  bottom: 40px;
+  right: 50%;
+  left: 50%;
+}
+
+.GeoKeyboardArrows__container__row {
+  display: flex;
+  justify-content: center;
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.GeoKeyboardArrows__container__item {
+  &:not(:last-child) {
+    margin-right: 8px;
+  }
+}
